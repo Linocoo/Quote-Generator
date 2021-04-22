@@ -9,14 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "expresss"
+    "url": "quote-generator"
   },
   "author": "LIKINO ODEY",
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "fs": "*",
     "node": "^15.14.0"
   },
   "description": "",
