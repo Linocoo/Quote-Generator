@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Generator</title>
+
+<script type="text/javascript">
+
+    function random_color(){
+
+        var color ='#';
+        var letters = ['eaba62', '233eed', 'ed23c4', '62e1ea', 'd162ea', '23a3ed', 'ed2d23', '59ed23'];
+        color+=letters[Math.floor(Math.random()*letters.length)];
+        document.getElementById('change').style.background=color;
+     }    
+    </script>
 </head>
-<body style="background: rgba(75, 179, 240, 0.788);">
+
+<body id="change" onload="return random_color()">
     <section>
-        <h1>
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">
             QUOTE GENERATOR
         </h1>
-        <p><%=quote%></p>
+        <h3 style="text-align: center;">
+            <%=quote%>
+        </h3>
 
     </section>
 
 </body>
+
 </html>

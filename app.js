@@ -32,9 +32,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 
-
 app.listen(PORT, () => {
-    console.log(`Example app Listening at http://localhost:${PORT}`);
+    console.log(`Example app is Listening at http://localhost:${PORT}`);
 
 });
 
